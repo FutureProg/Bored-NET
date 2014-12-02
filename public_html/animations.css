@@ -1,0 +1,46 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 1-Dec-2014, 11:02:07 AM
+    Author     : Nick
+*/
+
+@keyframes slidein{
+    from{
+        background-color: transparent;
+        color: transparent;
+        margin-top: 1em;
+    }
+    to{
+        background-color: black;  
+        color: white;
+        margin-top: 0em;
+    }
+}
+@-webkit-keyframes slidein{
+    from{
+        background-color: transparent;
+        color: transparent;
+        margin-top: 1em;
+    }
+    to{
+        background-color: #b59433;    
+        color: white;
+        margin-top: 0em;
+    }
+}
+@-moz-keyframes slidein{
+    from{
+        background-color: transparent;
+        color: transparent;
+        margin-top: 1em;
+    }
+    to{
+        background-color: black;    
+        color: white;
+        margin-top: 0em;
+    }
+}

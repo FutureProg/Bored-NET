@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Bored NET</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body onload="init();">
+        <div id="top">
+            <a href="index.html"><h1>Bored NET</h1></a>
+        </div>
+        <div id="cardFormDiv">
+            <form action="" id="cardForm">
+                Title:<br/>
+                <input type="text" name="title"><input type="submit"><br/>
+                Information:<br/>                
+            </form>
+            <textarea name="information" form="cardForm" cols="200" rows="4"></textarea>
+         </div>
+        <div id="content">   
+            
+        </div>
+      
+        <div id="footer">
+            Bored NET by Nickolas Morrison
+        </div>
+        <script src="Parser.js"></script>
+        <script src="Card.js"></script>
+        <script>
+            function init(){
+                for(var i = 0; i < 5;i++){
+                    var card = new Card(i,{content: i+""});
+                }
+                /*document.onclick = function onclick(){
+                    for(var i = 0; i < allCards.length;i++){
+                        if(allCards[i].isOpen()){
+                            allCards[i].expandInformation();
+                            break;
+                        }
+                    }
+                };*/
+            }            
+            
+        </script>
+    </body>
+</html>

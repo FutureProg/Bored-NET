@@ -1,0 +1,118 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 29, 2014, 12:30:04 AM
+    Author     : Nick
+*/
+
+@import 'animations.css';
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #ff9900;
+    font-family: sans-serif;
+}
+
+#top{
+    /* top: 0px; */
+    text-align:center;    
+    color:white;    
+    background: linear-gradient(to top,#ff9900 20%, #ffc300);
+    position: fixed;
+    z-index: 1;
+    top: 0px;    
+    width: 100%;
+    min-height: calc;    
+    border-bottom: 1px solid black;
+    
+}
+#top a{
+    text-decoration: none;
+    color: white;
+}
+
+#cardFormDiv{        
+    padding: 2em; 
+    background-color: #ffffff; 
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    right: 10%;
+    min-width: 80%;
+    min-height: calc;
+    z-index: 0;
+    border: 1px solid #cc6600;
+    border-radius: 4px;
+}
+#content{        
+    padding: 2em; 
+    background-color: transparent; 
+    position: absolute;
+    padding: 0;
+    top: 50%;
+    left: 10%;
+    right: 10%;
+    min-width: 80%;
+    min-height: 40%;
+    z-index: 0; 
+}
+
+#footer{
+    position: static;
+    bottom: 0px;
+    z-index: 0;   
+    width: 100%;
+    min-height: calc;       
+    text-align: center;
+    padding-bottom: 1em;
+    background-color: #ff9900;
+}
+
+.card{
+    position: absolute;   
+    background-color: transparent;
+    color: white;
+    width: 12em;
+    height: 10em;   
+    text-align: center;
+    padding-top: 1em;      
+    
+    animation: slidein 1s;    
+    animation-fill-mode: forwards;
+    -webkit-animation: slidein 1s;   
+    -webkit-animation-fill-mode: both;
+    -moz-animation: slidein 1s;    
+    -moz-animation-fill-mode: forwards;
+       
+    -webkit-transition: width 0.5s,
+        opacity 0.4s ease-in-out,
+        height 0.5s,
+        margin 0.5s;
+}
+
+.card:hover{
+    background-color: #FF0000;
+}
+
+.inner-card{    
+    right: 25%;
+    top: 27%;
+    width: 100%;
+    height: 100%;     
+    opacity: 0;    
+    overflow-y: auto;
+    word-wrap: break-word;       
+    
+    -webkit-transition: opacity 0.2s;
+}
+
+.card-image{
+    right: 0%;
+    top: 0%;       
+    max-width: 50%;
+    max-height: 50%;
+}
