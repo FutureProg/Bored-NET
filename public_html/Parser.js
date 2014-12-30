@@ -11,5 +11,7 @@ Parser.prototype.findImages = function(str){
     console.log(str);
     if(str === undefined)
         return null;    
-    return str.match(/\S+(\.png|\.jpg|\.bmp)$/g);
+    console.log("Searching for images in " + str);
+    return str.match(/\S+(\.png|\.jpg|\.bmp\.gif)/g);
 };
+

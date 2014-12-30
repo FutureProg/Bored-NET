@@ -11,36 +11,45 @@ and open the template in the editor.
 @keyframes slidein{
     from{
         background-color: transparent;
-        color: transparent;
-        margin-top: 1em;
+        color: transparent;        
+        border: none;
     }
     to{
-        background-color: black;  
-        color: white;
-        margin-top: 0em;
+        background-color: white;  
+        color: black;
+        border-color: black;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 2px;
     }
 }
 @-webkit-keyframes slidein{
     from{
         background-color: transparent;
-        color: transparent;
-        margin-top: 1em;
+        color: transparent;        
+        border: none;
     }
     to{
-        background-color: #b59433;    
-        color: white;
-        margin-top: 0em;
+        background-color: white;    
+        color: black;    
+        border-color: black;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 1px;
     }
 }
 @-moz-keyframes slidein{
     from{
         background-color: transparent;
-        color: transparent;
-        margin-top: 1em;
+        color: transparent;     
+        border: none;
     }
     to{
-        background-color: black;    
-        color: white;
-        margin-top: 0em;
+        background-color: white;    
+        color: black; 
+        border-color: black;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 1px;
     }
 }

@@ -16,25 +16,27 @@ and open the template in the editor.
             <a href="index.html"><h1>Bored NET</h1></a>
         </div>
         <div id="cardFormDiv">
-            <form action="" id="cardForm">
+            <form action="addCard();" id="cardForm">
                 Title:<br/>
-                <input type="text" name="title"><input type="submit"><br/>
-                Information:<br/>                
-            </form>
-            <textarea name="information" form="cardForm" cols="200" rows="4"></textarea>
+                <input type="text" name="title">
+                <input type="button" name="submit" value="Submit" onClick="addCard(this.form)">
+                <br/>                
+                Information:<br/>                                
+                <textarea name="information" form="cardForm" cols="200" rows="4"></textarea>
+            </form>            
          </div>
         <div id="content">   
             
         </div>
       
-        <div id="footer">
+        <!--<div id="footer">
             Bored NET by Nickolas Morrison
-        </div>
+        </div>-->
         <script src="Parser.js"></script>
         <script src="Card.js"></script>
         <script>
             function init(){
-                for(var i = 0; i < 5;i++){
+                for(var i = 0; i < 0;i++){
                     var card = new Card(i,{content: i+""});
                 }
                 /*document.onclick = function onclick(){
@@ -45,7 +47,14 @@ and open the template in the editor.
                         }
                     }
                 };*/
-            }            
+            }  
+            
+            function addCard(form){
+                var title = form.title.value;
+                var info = form.information.value;
+                console.log("creating card with data " + title + " : " + info);
+                var card = new Card(allCards.length,{content: title, information: info});
+            }
             
         </script>
     </body>
